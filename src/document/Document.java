@@ -167,8 +167,8 @@ public abstract class Document {
 	{
 	    // You will play with this method in week 1, and 
 		// then implement it in week 2
-		int wordsPerSentence = getNumWords() / getNumSentences();
-		int syllablesPerWord = getNumSyllables() / getNumWords();
+		double wordsPerSentence = (double) getNumWords() / (double) getNumSentences();
+		double syllablesPerWord = (double) getNumSyllables() / (double) getNumWords();
 		
 		double fleschScore = 206.835 - 1.015 * wordsPerSentence - 84.6 *syllablesPerWord;
 		
